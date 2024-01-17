@@ -7,24 +7,14 @@ from sqlalchemy.ext.declarative import declarative_base
 from os import getenv
 
 
-storage_type = getenv("db")
-Base = declarative_base()
-
-
 class User(BaseModel, Base):
     """This class defines a user by various attributes"""
     __tablename__ = 'users'
-    if storage_type == 'HBNB_TYPE_STORAGE':
-        email = Column(String(128), nullable=False)
-        password = Column(String(128), nullable=False)
-        first_name = Column(String(128), nullable=True)
-        last_name = Column(String(128), nullable=True)
-        places = relationship("Place", backref="user",
-                              cascade="all, delete-orphan")
-        reviews = relationship("Review", backref="user",
-                               cascade="all, delete-orphan")
-    else:
-        email = ""
-        password = ""
-        first_name = ""
-        last_name = ""
+    email = Column(String(128), nullable=False)
+    password = Column(String(128), nullable=False)
+    first_name = Column(String(128), nullable=True)
+    last_name = Column(String(128), nullable=True)
+    places = relationship("Place", backref="user",
+                            cascade="all, delete-orphan")
+    reviews = relationship("Review", backref="user",
+                            cascade="all, delete-orphan")
