@@ -7,7 +7,7 @@ from sqlalchemy.ext.declarative import declarative_base
 from os import getenv
 
 
-storage_type = getenv("HBNB_TYPE_STORAGE")
+storage_type = getenv("db")
 Base = declarative_base()
 
 
