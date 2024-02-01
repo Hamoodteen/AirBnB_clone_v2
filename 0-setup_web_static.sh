@@ -15,5 +15,5 @@ echo "server {
         alias /data/web_static/current/;
         index index.html;
     }
-}" | sudo tee -a /etc/nginx/sites-available/default /etc/nginx/config;
+}" | sudo tee -a /etc/nginx/sites-available/default /etc/nginx/nginx.conf;
 sudo service nginx restart;
