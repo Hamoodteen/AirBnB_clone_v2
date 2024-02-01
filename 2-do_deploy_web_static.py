@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """ commentttttttttttttttttttttttt """
-from fabric.api import local, put, run
+from fabric.api import *
 import os
 
 
