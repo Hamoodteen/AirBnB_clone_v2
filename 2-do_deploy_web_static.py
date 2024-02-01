@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 """ commentttttttttttttttttttttttt """
+from fabric import Connection
 from fabric.api import *
 import os
 
