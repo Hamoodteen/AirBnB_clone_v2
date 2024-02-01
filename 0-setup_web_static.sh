@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 #commentttttttttttttttttttttttttttttt
-sudo apt-get update;
-sudo apt-get install nginx;
+sudo apt-get -y update;
+sudo apt-get -y install nginx;
 mkdir -p /data/;
 mkdir -p /data/web_static/;
 mkdir -p /data/web_static/releases/;
