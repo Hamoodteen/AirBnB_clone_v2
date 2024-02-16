@@ -35,7 +35,7 @@ def py_text(text="is_cool"):
 @app.route('/number/<n>', strict_slashes=False)
 def number(n):
     """commenttttttttttttttttttttttttttttttttttttt"""
-    if isinstance(n, int):
+    if type(n) is int:
         return f'{n} is a number'
 
 
