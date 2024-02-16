@@ -17,14 +17,14 @@ def hbnb():
 
 
 @app.route('/c/<text>', strict_slashes=False)
-def c_text(text):
+def c_text(text="is_cool"):
     """commenttttttttttttttttttttttttttttttttttttt"""
     formatted = text.replace('_', ' ')
     return f'C {formatted}'
 
 
 @app.route('/python/<text>', strict_slashes=False)
-def py_text(text="is cool"):
+def py_text(text="is_cool"):
     """commenttttttttttttttttttttttttttttttttttttt"""
     formatted = text.replace('_', ' ')
     return f'Python {formatted}'
