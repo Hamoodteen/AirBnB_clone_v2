@@ -17,7 +17,7 @@ def hbnb():
 
 
 @app.route('/c/<text>', strict_slashes=False)
-def c_text(text="is cool"):
+def c_text(text):
     """commenttttttttttttttttttttttttttttttttttttt"""
     formatted = text.replace('_', ' ')
     return f'C {formatted}'
