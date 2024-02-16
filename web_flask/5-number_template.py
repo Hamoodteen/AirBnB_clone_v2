@@ -32,13 +32,13 @@ def py_text(text="is_cool"):
     return f'Python {formatted}'
 
 
-@app.route('/number/<n>', strict_slashes=False)
+@app.route('/number/<int:n>', strict_slashes=False)
 def number(n):
     """commenttttttttttttttttttttttttttttttttttttt"""
     return f'{n} is a number'
 
 
-@app.route('/number_template/<n>', strict_slashes=False)
+@app.route('/number_template/<int:n>', strict_slashes=False)
 def number_template(n):
     """commenttttttttttttttttttttttttttttttttttttt"""
     return render_template('5-number.html', intnumber=f'Number: {n}')
