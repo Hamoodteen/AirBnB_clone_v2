@@ -24,7 +24,7 @@ def c_text(text="is_cool"):
     return f'C {formatted}'
 
 
-@app.route('/python/<text>', strict_slashes=False)
+@app.route('/python/(<text>)', strict_slashes=False)
 @app.route('/python/', strict_slashes=False)
 def py_text(text="is_cool"):
     """commenttttttttttttttttttttttttttttttttttttt"""
