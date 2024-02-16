@@ -21,7 +21,6 @@ classes = {
 class DBStorage:
     """ DBStorage Class """
     __engine = None
-    __session = None
 
     def __init__(self):
         """ init method """
@@ -30,7 +29,3 @@ class DBStorage:
             os.getenv('HBNB_MYSQL_PWD'),
             os.getenv('HBNB_MYSQL_HOST'),
             os.getenv('HBNB_MYSQL_DB')), pool_pre_ping=True)
-        
-    def close(self):
-        """ccccccccccccccccccccccccccccccccccccccc"""
-        self.reload(remove=True)
