@@ -26,4 +26,4 @@ class State(BaseModel, Base):
             for cityid in models.storage.all(City).values():
                 if getattr(cityid, "state_id") == self.id:
                     cityls.append(cityid)
-            return(cityls)
+            return (cityls)
