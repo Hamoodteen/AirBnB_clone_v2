@@ -39,7 +39,7 @@ def number(n):
 
 
 @app.route('/number_template/<n>', strict_slashes=False)
-def number_template(n):
+def number_template(n, strict_slashes=False):
     """commenttttttttttttttttttttttttttttttttttttt"""
     return render_template('5-number.html', intnumber=n)
 
